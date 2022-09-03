@@ -1,0 +1,233 @@
+/* MOVIL */
+
+@media screen and (max-width: 975px) {
+  .nav {
+    height: 60px;
+  }
+
+  .topbar,
+  .nav-pc,
+  .bottombar {
+    display: none;
+  }
+
+  .mt-mb {
+    position: relative;
+    top: 70px;
+  }
+
+  .nav-mb {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-item-mb-max {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-item-mb {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-mb {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--gray);
+  }
+
+  .num-quantity-mb {
+    position: absolute;
+    top: 13px;
+    right: 1.5%;
+    font-size: 11px;
+    width: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 3px;
+    color: var(--white);
+    border-radius: 100%;
+    background-color: var(--tomano);
+  }
+
+  .icon-mb {
+    font-size: 17px;
+  }
+
+  .icon-left {
+    margin-inline: 6px;
+  }
+
+  .active-menu-mb {
+    color: var(--tomano) !important;
+  }
+
+  .link {
+    font-size: 13px;
+    margin-inline: 6px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--gray);
+  }
+
+  .menu-mb {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    z-index: 999;
+    transition: 0.2s ease;
+    background-color: var(--gray);
+  }
+
+  .category-mb {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px var(--light);
+    border-bottom: solid 1px var(--light);
+  }
+  .list-category::-webkit-scrollbar {
+    display: none;
+  }
+
+  .item-category {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-category {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    list-style: none;
+    margin: 10px;
+    overflow-x: scroll;
+  }
+
+  .active-category-mb {
+    background-color: var(--tomano) !important;
+  }
+
+  .content-img {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 10px;
+    color: var(--white);
+    background-color: var(--gray-dark);
+  }
+
+  .icon-img-user {
+    font-size: 64px;
+    height: 80px;
+  }
+
+  .name-user {
+    font-size: 14px;
+    color: var(--light);
+    font-weight: 600;
+  }
+
+  .list-menu-mb {
+    list-style: none;
+  }
+
+  .list-menu-mb > li {
+    margin: 35px 35px;
+  }
+
+  .list-menu-mb > li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--light);
+    text-decoration: none;
+  }
+
+  .content-btn-close {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .close-menu-mb {
+    font-size: 18px;
+    padding: 6px 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--light);
+    background-color: var(--tomano-dark);
+  }
+
+  .search-mb {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    transition: 0.2s ease;
+    background-color: var(--white);
+    overflow-y: auto;
+  }
+
+  .search-header-mb {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-bottom: solid 1px var(--light);
+  }
+
+  .item-search-mb {
+    margin-inline-end: 5px;
+  }
+
+  .item-icon-mb {
+    margin-inline: 10px;
+  }
+
+  .input-search-mb {
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: solid 1px var(--light);
+    padding: 8px;
+  }
+
+  .input-search-mb:focus {
+    outline-color: var(--tomano);
+  }
+
+  .item-search-mb {
+    width: 100%;
+  }
+}

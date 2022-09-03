@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <!-- LOGIN -->
+    <link rel="stylesheet" href="../../css/form.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <nav class="nav-login">
+        <a href="../../"><span class="back-login"><i class="fas fa-arrow-left"></i></span></a>
+        <div class="content-nv-login">
+            <h3>Oneel<span class="txt-tomato">Products</span></h3>
+        </div>
+    </nav>
+
+
+    <div class="container-login">
+        <div class="card">
+            <div class="card-title">
+                <h2 class="text title">Iniciar sesión</h2>
+            </div>
+            <form enctype="multipart/form-data" class="card-body">
+                <label for="user" class="lbl-login">Usuario</label>
+                <input type="text" name="username" placeholder="Usuario" class="input-login" autofocus required>
+                <label for="pwd" class="lbl-login">Contraseña</label>
+                <input type="password" name="password" placeholder="Contraseña" class="input-login input-pwd" required>
+                <input type="submit" value="Iniciar sesión" class="btn-login">
+            </form>
+            <div class="card-footer">
+                <span>¿No tienes cuenta?</span>
+                <a href="../crear-cuenta/" class="forget-pwd">&nbsp;&nbsp;Crear cuenta!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/inputView.js"></script>
+</body>
+
+</html>
