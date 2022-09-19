@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="OneelProducts - Registrate y compra nuestros productos de limpieza.">
     <meta name="description" content="Ventas de productos de limpieza.">
-    <title>OneelProducts</title>
     <!-- LINK ICON -->
     <link rel="icon" type="image/png" href="../../assets/logo.png">
     <!-- HEADER-->
@@ -23,10 +22,11 @@
     <link rel="stylesheet" href="css/shopping.css" />
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="./state/store.js"></script>
+    <title>OneelProducts</title>
 </head>
 
 <body>
-
 
     <!-- START TOPBAR -->
     <section class="topbar">
@@ -70,7 +70,7 @@
                     <a href="#" class="content-shopping open-view-shop">
                         <span class="icon-shopping-pc ">
                             <i class="fal fa-shopping-cart"></i>
-                            <span class="number-quantity icons">10</span>
+                            <span name="indicator-car" class="number-quantity icons">0</span>
                             </i>
                         </span>
                         <div class="content-txt-shop">
@@ -106,8 +106,11 @@
 
             <div class="nav-item-mb">
                 <span class="icon-left open-search-mb"><i class="far fa-search icon-mb"></i></span>
-                <span class="icon-left open-view-shop"><i class="far fa-shopping-cart icon-mb"><span
-                            class="num-quantity-mb">1</span></i></span>
+                <span class="icon-left open-view-shop">
+                    <i class="far fa-shopping-cart icon-mb">
+                        <span name="indicator-car" class="num-quantity-mb">0</span>
+                    </i>
+                </span>
             </div>
         </section>
         <!-- END NAV-MB -->
@@ -185,7 +188,7 @@
                             <span class="resumen price">RD$&nbsp;1,500</span>
                         </div>
                         <div class="card-btns">
-                            <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                            <button data-id="0" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                             <button class="btn-icon"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
@@ -204,7 +207,7 @@
                             <span class="resumen price">RD$&nbsp;1,500</span>
                         </div>
                         <div class="card-btns">
-                            <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                            <button data-id="1" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                             <button class="btn-icon"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
@@ -234,119 +237,7 @@
         <div class="shopping-title">
             <h3>Pedidos</h3>
         </div>
-        <div class="content-cards-shop">
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-shop">
-                <div class="item-card-shop">
-                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
-                        class="img-pro-shop">
-                </div>
-                <div class="item-descri-shop">
-                    <h5 class="resumen">Shampoo</h5>
-                    <input type="number" class="input-canti" value="0">
-                    <button class="remove-card-shop"><i class="far fa-times"></i></button>
-                </div>
-            </div>
-        </div>
+        <div id="content-shopping_car" class="content-cards-shop"></div>
         <div class="content-btn-shop">
             <button class="btn-close-shop"><i class="far fa-arrow-left"></i></button>
         </div>
@@ -392,7 +283,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="2" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -412,7 +303,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="3" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -432,7 +323,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="4" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -452,7 +343,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="5" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -471,7 +362,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="6" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -490,7 +381,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="7" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -509,7 +400,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="8" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -528,7 +419,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="9" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -547,7 +438,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="10" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -566,7 +457,7 @@
                         <span class="resumen price">RD$&nbsp;1,500</span>
                     </div>
                     <div class="card-btns">
-                        <button class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
+                        <button data-id="11" name="btn-add-car" class="btn"><i class="far fa-cart-arrow-down"></i>&nbsp;&nbsp;Añadir</button>
                         <button class="btn-icon"><i class="far fa-heart"></i></button>
                     </div>
 
@@ -576,11 +467,25 @@
         </div>
     </section>
     <!-- END CONTENT-CARD -->
-
-
+    <!-- Pantillas de Elementos Reutilizados -->
+    <template id="template-card-shop">
+        <div class="card-shop">
+                <div class="item-card-shop">
+                    <img src="https://laboratoriosorion.com/wp-content/uploads/2019/11/Shampoo-autos-3000ml-600x675.jpg"
+                        class="img-pro-shop">
+                </div>
+                <div class="item-descri-shop">
+                    <h5 class="resumen">Shampoo</h5>
+                    <input type="number" class="input-canti" value="1" min="1">
+                    <button name="delete-shop-item" class="remove-card-shop"><i class="far fa-times"></i></button>
+                </div>
+            </div>
+    </template>
+    <script src="./js/const.js"></script>
     <section class="container-cards"> </section>
 
     <script src="js/actions.js"></script>
+    <script src="./js/shopping_car.js"></script>
 </body>
 
 </html>
