@@ -57,6 +57,10 @@
       fragment.appendChild(cloneElement);
     });
     carContent.appendChild(fragment);
+    if (!items.length) {
+      carContent.innerHTML =
+        "<p style='font-size: 12px; margin-top: 50%;'>Aún no Agrega Productos al Carrito</p>";
+    }
     carContent.querySelectorAll(".input-canti").forEach(function (item) {
       item.addEventListener("change", function ({ target }) {
         if (target.valueAsNumber < 1) target.value = 1;
